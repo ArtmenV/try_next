@@ -1,29 +1,16 @@
 import Link from "next/link"
 // import fetch from 'isomorphic-unfetch'
 import axios from 'axios'
+import { withRouter } from 'next/router'
 
 
-function About({ stars }) {
-  debugger
-
-  return (
+const About = withRouter((props) => (
     <>
-      <div>asdas
-        Next stars: {stars}
+      <div>{props.router.query.title}-----
+        <h1>Next stars: ArtmenV</h1>
       </div>
     </>
-  )
-}
+  ));
 
- About.getInitialProps = async({req}) => {
-
-    const res = await fetch('https://jsonplaceholder.typicode.com/users')
-   const json = await res.json()
-
-    return {
-      stars: json.data
-    }
-
-}
 
 export default About
