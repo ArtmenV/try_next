@@ -1,5 +1,5 @@
 {
-  "name": "nest_ssr_project",
+  "name": "next_ssr_project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "9.2.2",
+    "node-sass": "^4.13.1",
     "react": "16.13.0",
     "react-dom": "16.13.0"
   }
